@@ -1,0 +1,134 @@
+
+.section1{
+    display: $d-play;
+    width: 100%;
+    
+    @media screen  and (min-width: 768px) and (max-width: 1024px){
+        flex-direction: column;
+        align-items: center;
+}
+.mainimg{
+    width: 30%;
+    @media screen  and (min-width: 768px) and (max-width: 1024px){
+        width: 50%;
+        display: grid;      
+    }
+}
+
+.mainimg>img{
+   @include imgsize(100%, 500px)
+    }
+    .asideimg{
+        @include textsize(bisque,column,center,70%);
+        display: $d-play;
+        align-items: center;
+
+        @media screen  and (min-width: 768px) and (max-width: 1024px){
+           flex-direction: column;
+           width: 50%; 
+        }       
+        >h2{
+            font-weight: $fontweight;
+            font-size: 70px;
+            color: $textcolor2;
+            padding-bottom: 15px;
+        }
+        >p{
+            padding-bottom: 15px;
+            font-size: 24px;
+            font-weight: $fontweight;
+            font-family: arial;
+        }
+        >.buttons{
+            width: 30%;
+            background-color: $textcolor2;
+            padding:12px 38px;
+            border: none;
+            transition: .2s;
+            &:hover{
+                background-color: gray;
+            }
+            >.alink{
+                font-weight: 600;
+                text-decoration: none;
+                color: $textcolor;
+            }
+        }
+    }
+}
+
+.text1{
+    margin-top: 50px;
+    
+}
+
+.cards{
+    .card{
+        border: none;
+        .card-text{
+            font-weight: 600;
+            font-family:sans-serif;
+            margin-top: 10px;
+        }
+    }
+    @media screen  and (min-width: 768px) and (max-width: 1024px){
+        width: 100%;
+        align-items: center;
+    }
+}
+.gift{
+    font-size: 30px;
+    font-family:georgia;
+    color: $textcolor2;
+}
+button{
+    background-color: inherit;
+    width: 100%;
+    padding:18px 38px;
+    transition: .2s;
+    &:hover{
+        background-color: $textcolor2;   
+    }
+    &:hover a{
+        color: white;
+    }  
+    >a{
+        text-decoration: none;
+        color: $textcolor2;
+        width: 100%;
+    }
+}
+#product2{
+    background-color: beige;
+    padding:50px ;
+    margin: 100px 0; 
+}
+
+#Picture{
+    border-top: 2px solid black;
+    width: 80%;
+    margin: 0 10%; 
+}
+.miniflex{
+    display: $d-play;
+    @include miniflex(10px, space-between, center);
+    .style{
+        font-size: 30px;
+        color: $textcolor2 ;
+    }
+    .seeall{
+        font-size: 15px;
+        >a{
+            color: $textcolor2;
+        }
+    }
+}
+.textend{
+    p,a{
+        padding-top: 26px;
+        color: $textcolor2;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+

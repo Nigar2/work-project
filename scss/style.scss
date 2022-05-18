@@ -1,0 +1,10 @@
+@import "Home/varaible" ;
+@import "Home/mixin" ;
+@import "Home/home" ;
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+    outline: none;
+}

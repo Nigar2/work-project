@@ -1,0 +1,19 @@
+@mixin imgsize ($width, $height){
+    width: 100%;
+    height: 500px;
+    
+}
+
+@mixin textsize ($bg-color, $flex-d, $justifly-c,$width) {
+   background-color: bisque;
+   flex-direction: column;
+   justify-content: center;
+   width: 70%;
+}
+
+@mixin miniflex ($bordert, $justify-c,$align) {
+    border-top: 10px;
+    justify-content: space-between;
+    align-items: center
+    
+}
